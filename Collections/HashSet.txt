@@ -1,0 +1,59 @@
+HashSet Class:
+
+1. HashSet Class from java 1.2
+2. Implement Set Interface, backed by Hash Table(Actually instance of HashMap)
+3. Extends Classes Object, CollectionSet, AbtractSet
+4. Implements Set, Iterable, Serializable, Collection, Cloneable
+
+5. Not syncronized, Fail Fast mechanism throws ConcurrentModificationException 
+
+Note: Fail Fast mechanism of Iterator cannot guarantees Throwing of Exception.
+It must be used for testing purpose or bug fixing.
+
+
+** Iteration Order is not fixed and guaranteed
+
+
+6. It allows null values, not synchronized in nature.
+
+
+7. Common constructor are:
+
+a) HashSet()
+b) HashSet(Collection e)
+c) HashSet(Int intialCapacity)
+d) HashSet(int initialCapacity, float loadFactor)
+
+Common Methods:
+
+a) boolean add(E e)
+b) void clear()
+c) Object clone()
+d) boolean contains()
+e) boolean isEmpty()
+f)Iterator<E> iterator()
+g) boolean remove(Object o)
+h) int size()
+
+Methods inherited are :
+
+java.util.AbstractSet : equals, removeAll, hashCode
+
+java.util.AbstractCollection : addAll, containsAll, retainAll, toArray, toString
+
+java.util.Set : addAll, contains, equals, hashCode, removeAll, retainAll
+
+java.lang.Object: finalize, getClass, notify, notifyAll, wait
+
+
+Common Exceptions are :
+
+NullPointerException
+IllegalargumentException:
+
+
+
+
+
+  
+ 

@@ -1,0 +1,6 @@
+LinkedHashSet:
+
+a) SubClass of HashSet
+b) From Jdk 1.4
+c) Hashtable and LinkedList implementation of Set interface with predictable iteration order.
+d) 
