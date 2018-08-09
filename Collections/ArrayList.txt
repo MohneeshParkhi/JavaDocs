@@ -1,0 +1,71 @@
+Class ArrayList<E> :
+
+1. It is Part of Collection Framework in Java.
+2. IT extends Three Classes - Object, AbstractCollection<E>, AbstractList<E>
+3. Implements Interfaces- Iterator, List, Cloneable, Serializable 
+4. Constant Time Operation -> isEmpty(), size, get, set iterator, listIterator
+5. Amortized constant Time -> ADD (adding n elements takes O(n))
+6.  Rest Operation takes Linear time.
+
+7. It is Resizable in nature, after reaching its initial capacity.
+
+8. has Three Constructors : ArrayList(Collection<?> c), ArrayList(int capacity), ArrayList()
+
+9. Default Constructor sets the initial capacity to 10.
+
+10. ArrayList is not syncronized as compared to Vector Class.
+
+11. Not a Legacy class, Added in JAVA 1.2.
+
+12. It inherit modCount field from AbstractList class
+     protected transient int modCount  
+     
+	 Shows number of time List id structurally modified.
+	 
+13. It has Subclasses also - AttributeList, RoleList, RoleUnresolvedList.
+
+14. common methods:
+
+a) To Add any Generic Object : boolean add(E e)
+b) To add at certain index : void add(int index, E e)
+c) To add whole Collection: boolean addAll(Collection<? extends E> c)
+d) To add Collection from particular index : boolean addALL(int index, Collection<? extends E>)
+e) To remove all elements from ArrayList : void clear()
+f) to have a shallow copy of ArrayList : void Clone() { Uses Object class method}
+g) to remove element from List from certain index : E remove(int index)
+h) to remove a specified element from List: boolean remove(Object o)
+i) to remove whole collection :boolean removeALL(Collection<? extends e> c)
+j) To remove collection between index: protected removeRange(int bIndex, int eIndex)
+k) To know number of elements present within ArrayList => int size()
+l) to et sublist from arrayList : List<E> subList(int bIndex, int eIndex)
+m) To replace an element at specified position: E set(itn index, E e)
+n) Return Array of List : Object[] toArray()
+o) Return type of Array is RaayType : <T> T[] toArray(T[] a)
+p) Reduces size to actual elements in array : void trimToSize()  
+q) to check a presence of certain element : boolean contains(Object o)
+r) To return element from specified position: E get(int index)
+s) To check whether list is empty or not : boolean isEmpty()
+t) To  have index of Element : int indexOf(E e)
+u) To have instance of iterator; Iterator iterator()
+v) To have Instance of ListIterator: listIterator()
+x) to have instance form specified index: listIterator(int index)
+y) to retain all elements that are contained in Collection : boolean retainALL()
+z) tO HAVE lAST OCCURENCE of specified element: int lastIndexOf()
+A) Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.: void ensureCapacity(int minCapacity)
+B) Return iterator in proper sequence over this List : Iterator iterator()
+
+Exception Throw:
+
+A) NullPointerException : when Specified collection added with null values
+b) IllegalArgumentException: if specified initial capacity is negative
+
+
+Methods inherited from various Classes:
+
+A) AbstractList: equals, hashCode
+b) AbstractCollection: containsAll, toString
+c) Object : finalize, getClass, notify, notifyAll, wait
+d) List : containsALL, hashCode, equals
+
+
+ 	 

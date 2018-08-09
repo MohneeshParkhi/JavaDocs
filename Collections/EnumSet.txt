@@ -1,0 +1,48 @@
+EnumSet:
+
+1. A specialized Set to use with enum types
+2. Extends AbstractSet, AbstractCollection,Object Class
+3. implements Cloneable and Serializable interfaces, including Set interface.
+4. All elements must belongs to same enum type
+5. Traversing using Iterator in natural order
+6. Not syncronized, but can make it by calling synchronizedSet(Object e) methods of collection classes.
+7. All basic operation executes in constant time.
+8. Introduced in JDK 1.5, not a legacy class.
+
+Common methods are as follows: 
+
+a) static EnumSet<? extends E> allOf(Class<E> elementtype)
+b) EnumSet<E> clone()
+c) static Enumset<E> complementOf()
+d) static EnumSet<E> copyOf(Collection<? extends e> collectiontype)
+e) static EnumSet<E> copyOf(EnumSet e)
+f) static EnumSet<E> noneOf(Class<E> elementType)
+g) static EnumSet<E> of(E e):
+h) static EnumSet<E> of(E first, E...rest)
+i) static EnumSet<E> of(E e1, E e2)
+j) static EnumSet<E> of(E e1, E e2, E e3)
+k) static EnumSet<E> of(E e1, E e2, E e3, E e4)
+l) static EnumSet<E> of(E e1, E e2, E e3, E e4, E e5)
+m) static EnumSet<E> range(E from, E to)
+
+
+It inherits following methods:
+
+AbstractSet : equals, hashCode, removeAll
+
+AbstractCollection: add, addAll, clear, contains, containAll, isEmpty, iterator, remove,
+retainAll, size, toArray, toString
+
+java.lang.Object: finalize, getClass, notify, notifyAll, wait
+
+java.util.Set : add, addAll, contains, containsAll, isEmpty, iterator, remove, retailAll, Size, toArray
+
+
+Exception Associated with it:
+
+NullpointerException, IllegalArgumentException, ConcurrentModificationException etc.
+
+
+Note : e1, e2, e3, e4, e5 are inital elements need to be contained in Enumset.
+
+

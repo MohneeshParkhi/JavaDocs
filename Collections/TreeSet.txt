@@ -1,0 +1,54 @@
+TreeSet:
+
+1. Implements Set, SortedSet, NavigationalSet interface.
+2. Extends AbstractSet class
+3. TreeSet is not a legacy class, introduced in 1.2 version
+3. It has 1 default constructor and 3 overloaded constructor, namely 
+	a) TreeSet()
+	b) TreeSet(Collection<? extends e> c)
+	c) TreeSet(Comparator<? extends e> comparator)
+	d) TreeSet(SortedSet<E> s)
+	
+4. Must implement Comparator() method for objects.
+5. All objects are of same type, otherwise will throe ClassCastException.
+6. Follows natural ordering of elements.
+7. Store in Sorted sequence as per key
+8. log(n) time for add, remove and contains operation
+9. Not synchronised by default, but can be synchronised by calling Collections method
+i.e. synchronizedSortedSet(Treset object)
+
+10. throws ConcurrentModificationExcpetion incase, access by multiple thread.
+
+Common Methods are:
+
+a). boolean add(E e):
+b) boolean addAll(Collection<? extends e> e)
+c)  E ceiling()
+d) void clear()
+e) Object Clone()
+f) Comparator<? super E>
+g) boolean contains(Object o)
+h) Iterator<E> descendingIterator()
+i)NavigableSet<E> descendingSet()
+j)E first()
+k) E floor(E e)
+l) SortedSet headSet(E toElement)
+m) NavigableSet headSet(E toElement, boolean inclusive)
+n) E higher(E e)
+o) boolean isEmpty()
+p) Iterator<E> iterator()
+q) E last()
+r)E lower(E e)
+s) E pollFirst()
+t) E pollLast()
+u) boolean remove(Object o)
+v) int size()
+x) NavigableSet<E> subSet(E from, boolean inclusive, E To, boolean inclusive)
+y) SortedSet<E> subSet(E fromElement, e toElement)
+z) SortedSet<E> tailSet(E fromElement)
+A) NavigableSet<E> tailSet(E fromElement, boolean inclusive)
+
+total methods: 27
+
+
+   
