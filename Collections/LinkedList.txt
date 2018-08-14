@@ -1,0 +1,81 @@
+LinkedList :
+
+1. It implements interfaces---List<E>, Cloneable, Serializable, Collection<E>, Iterable<E>, Deque<E>, Queue<E>.
+2. It   extends classes : java.lang.Object, java.util.AbstractCollection, java.util.AbstractList and 
+java.util.AbstractSequentialList .
+
+3. It was introduced in JDK 1.2, hence not a legacy classes
+
+4. It is doublyLinked list implementation of List and Deque inetrface.
+
+5. Permits all type of elements, including null values.
+
+6. This implementation is not synchronised by default, but can be synchronised by calling synchronisedList() method of Collection class etc.
+
+7. It has Two construcutors.
+
+a) Default :  LinkedList() => Contructs an empty List
+b) Parametrised : LinkedlList(Collection<? extends E> c)
+
+8. Following method are inherited :
+
+1. AbsractSequentialList:iterator
+2. AbtractList: equals, hashCode, listIterator, subList, removeRange
+3. AbstractCollection: containsAll, removeAll, isEmpty, retainAll, toString
+4. Object : finalize, getClass, notify, wait
+
+5.List : containsAll, equals, hashCode, isEmpty, iterator, listIterator, removeAll, retainAll, subList 
+
+6. Deque: iterator 
+
+8. Exception associated are:
+
+a) NoSuchElementExcpetion
+b) ConcurrentModificationException
+c) NullPointerException
+d) IndexOutofBoundsException
+
+
+Methods of LinkedList class:
+
+1) public E getFirst() :return first element, NoSuchElementExcpetion(if list is Empty)
+2) public E getLast() : returns Last element , NoSuchElementExcpetion(if list is Empty)
+3) public E removeFirst() : remove and return first element, NoSuchElementExcpetion(if list is empty)
+4) public E removeLast(): remove and return last element, NoSuchElementExcpetion(if List is empty)
+5) public void addFirst(E e): add element at first position in list.
+6) public void addLast(E e): add element in the end of doubly linked list.
+7) public boolean contains(Object o):
+8) public int size()
+9) public boolean add(E e)
+10) public boolean remove(Object o)
+11) public boolean addAll(Collection<? extends E> c)
+12) public boolean removeAll(Collection<? extends E> c)
+13) public boolean addAll(int index,Collection<? extends E> c) 
+14) public void clear() : remove all elements from list.
+15) public E get(int index)
+16) public E set(int index, E element)
+17) public void add(int index, E e)
+18) public E remove(int index, E element)
+19) public int indexOf(Object o)
+20) public int lastIndexOf(Object o)
+21) public E peek()
+22) public E element()
+23) public E poll()
+24) public E remove()
+25) public boolean offer(E e)
+
+26) public boolean offerFirst(E e)
+27) public boolean offerLast(E e)
+27) public E peekFirst(E e)
+28) public E peekLast()
+29) public E pollFirst()
+30) public E pollLast()
+31) public void push(E e)
+32) public E pop()
+33) public boolean removeFirstOccurrence()
+35) public boolean removeLastOccurrence() 
+36) public Object[] toArray()
+37) public <T> T toArray(T[] a)
+38)  public Object clone()
+39) public ListIterator<E> listIterator(int Index)
+40) public Iterator<E> descendingIterator()

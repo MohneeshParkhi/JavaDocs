@@ -1,6 +1,86 @@
 LinkedHashSet:
 
+
+******* E -- type of Elements stored in the LinkedHashSet 
+
+
 a) SubClass of HashSet
 b) From Jdk 1.4
 c) Hashtable and LinkedList implementation of Set interface with predictable iteration order.
-d) 
+d) It extends java.lang.Object, Java.util.AbstractCollection, java.util.AbstractSet, java.util.HashSet interface.
+e) It implements Iterable<E>, Set, Serializable, Cloneable<E> Interface.
+
+
+f)Iteration order is Insertion Order as this "Set" implementations contains Doubly Linked list elements
+which defines the iteration order.
+Re-insertion order does not alter the iteration order.
+
+g) Since HashSet does not determine iterable order and Implementing TreeSet is costly, it is very good choice.
+
+h) It provide copy of Set having some elements and operation can be performed on such elements.
+
+i) Like HashSet, it allows Null Values and performance in constant time for basic operation like add, remove, contains etc.
+
+
+j) Not synchronized internally, however can be synchronized externally
+
+
+Performance analysis:
+
+a) Lower performance then HashSet due to addition of linked list with Exception
+		1.Iteration over LinkedHashedSet require time proportional to size of Set, regardless of its capacity.
+		2. Iteration over HashSet is expensive as it require time proportional to its capacity
+b) Constant time performance for basic operation
+c) A linkedHashSet has two parameters that affects its performance i.e. initialCapacity and loadFactor. The value of these parameters is decided precisely. However, increased value of these parameters have more adverse impact on HashSet in comparison to LinkedHashSet.
+
+
+Constructors:
+
+There are 4 constructor:
+
+1.  LinkedHashSet()
+2. LinkedHashSet(int intialCapacity)
+3. LinkedHashSet(int inittialCapacity, float loadFactor)
+4. LinkedHashSet(Collection<? extend E> c)
+
+
+Note: Default Load Factor : 0.75 and Default initial capacity=> 16 
+
+
+
+It's Method : 
+
+A) SplitIterator<E> splitIterator()
+** Create lateBinding and failFast splitIterator over elements of this set.
+**The Spliterator reports Spliterator.SIZED, Spliterator.DISTINCT, and ORDERED. Implementations should document the reporting of additional characteristic values.
+
+
+Added in JDK 1.8
+
+
+Rest all Methods are inherited from other classes and Interfaces
+
+A) java.util.AbstractCollection: addAll, containsAll, toArray, retainAll, toString.
+
+B) java.util.AbstractSet : equals, hashCode, removeAll
+
+C) Interface java.util.Collection: parallelstream, stream, removeIf 
+
+D) Methods in java.util.HashSet: add, clear, clone contains, isEmpty, iterator, remove, size
+
+e) interface java.util.Iterable: forEach 
+
+f) Class java.lang.Object:
+
+    finalize, getClass, notify, notifyAll, wait 
+	
+g) interface java.util.Set: add, addAll, clear, contains, containsAll, equals, hashCode, isEmpty,
+iterator, remove, removeAll, retainAll, size, toArray.
+
+
+
+
+ 
+
+
+		
